@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Track Crack Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Railway Track Crack Simulation</h1>
+
+        <div class="description">
+            <p>This simulation demonstrates how a crack propagates along a railway track over time. Use the controls below to start, pause, or reset the simulation.</p>
+        </div>
+
+        <div class="simulation">
+            <div class="track-container">
+                <h2>Track Simulation</h2>
+                <div class="railway-track">
+                    <div class="rail"></div>
+                    <div class="rail"></div>
+                    <div class="crack" id="crack"></div>
+                </div>
+            </div>
+
+            <div class="graph-container">
+                <h2>Crack Length Over Time</h2>
+                <canvas id="crackGraph"></canvas>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startSimulation">Start Simulation</button>
+            <button id="pauseSimulation">Pause Simulation</button>
+            <button id="resetSimulation">Reset Simulation</button>
+        </div>
+
+        <div class="explanation">
+            <h2>Explanation</h2>
+            <p>The railway track crack simulation illustrates the impact of stress and fatigue on the structural integrity of railway tracks. Over time, small imperfections can develop into larger cracks, which, if unchecked, can lead to significant safety hazards.</p>
+            <p>The graph shows the relationship between time and crack length, providing insight into the crack propagation speed and potential intervention points for maintenance and repair.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
